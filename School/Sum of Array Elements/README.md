@@ -1,4 +1,4 @@
-<h2><a href="https://practice.geeksforgeeks.org/problems/sum-of-array-elements2502/1?page=1&difficulty[]=-2&sortBy=submissions">Sum of Array Elements</a></h2><h3>Difficulty Level : School</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an integer array<strong> arr</strong> of size <strong>n</strong>, you need to sum the elements of arr.</span></p>
+<h2><a href="https://practice.geeksforgeeks.org/problems/sum-of-array-elements2502/1?page=1&difficulty[]=-2&category[]=Arrays&sortBy=submissions">Sum of Array Elements</a></h2><h3>Difficulty Level : School</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an integer array<strong> arr</strong> of size <strong>n</strong>, you need to sum the elements of arr.</span></p>
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
