@@ -9,18 +9,17 @@ class Solution
     public:
     //Function to check if a string can be obtained by rotating
     //another string by exactly 2 places.
-    bool isRotated(string str1, string str2)
+    bool isRotated(string s1, string s2)
     {
         // Your code here
-        int flag1=0,flag2=0;
-        string temp=str2+str2;
-        int st=str1.size()-2;
-        string s1(temp.begin()+st,temp.begin()+2*st+2);
-        if(str1==s1) flag1=1;
-        string s2(temp.begin()+2,temp.begin()+2+str1.size());
-        if(str1==s2) flag2=1;
-        if(flag1 || flag2) return 1;
-        return 0;
+        int n1=s1.size(),n2=s2.size();
+        if(n1!=n1)return 0;
+        if(n1<=2)
+            return s1==s2;
+        string c="",ac="";
+        ac=s1.substr(2)+s1.substr(0,2);
+        c=s1.substr(n1-2,2)+s1.substr(0,n1-2);
+        return (ac==s2||c==s2);
     }
 
 };
