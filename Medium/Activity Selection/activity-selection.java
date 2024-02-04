@@ -37,7 +37,8 @@ class Main
 
 
 // } Driver Code Ends
- //Function to find the maximum number of activities that can//be performed by a single person.
+ //Function to find the maximum number of activities that can
+ //be performed by a single person.
     class Activity {
     int start, end;
 
