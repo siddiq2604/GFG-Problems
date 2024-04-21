@@ -40,15 +40,13 @@ class Solution
         /*You are required to complete below method */
         int sumOfLeafNodes(Node *root ){
              /*Your code here */
-            if (root == NULL) 
-            return 0;
-            if (root->left == NULL && root->right == NULL) {
-                return root->data;
-            }
-            int sum = 0;
-            sum += sumOfLeafNodes(root->left);
-            sum += sumOfLeafNodes(root->right);
-            return sum;
+             if(root==NULL)
+             return 0;
+             if(root->left==NULL && root->right==NULL)
+             return root->data;
+             int leftAns=sumOfLeafNodes(root->left);
+             int rightAns=sumOfLeafNodes(root->right);
+             return leftAns+rightAns;
         }
 };
 
