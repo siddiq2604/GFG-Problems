@@ -26,24 +26,40 @@ class GFG
 
 class Solution{
     String longestPalindrome(String s){
-        // code here
-        int n = s.length();
-        int max=1,s1=0;
+       int n = s.length();
+        if(n==1)
+            return s;
+        char c = s.charAt(0);
+        String res = Character.toString(c);
+        int max=1,st=0;
         for(int i=0;i<n;i++){
             for(int j=i;j<n;j++){
-                int flag=1;
-                for(int k=0;k<(j-i+1)/2;k++){
-                    if(s.charAt(i+k)!=s.charAt(j-k)){
-                        flag=0;
-                        break;
+                String str = s.substring(i,j+1);
+                if(isPal(str))
+                {
+                    if(str.length()>max)
+                    {
+                        max = str.length();
+                        res = str;
                     }
-                }
-                if(flag!=0 && (j-i+1)>max){
-                    s1=i;
-                    max=j-i+1;
                 }
             }
         }
-        return s.substring(s1,s1+max);
+
+        return res;
+    }
+    static boolean isPal(String s){
+        int i=0,j=s.length()-1;
+
+        while(i<=j){
+            if(s.charAt(i)!=s.charAt(j))
+                return false;
+            else{
+                i++;
+                j--;
+            }
+        }
+
+        return true;
     }
 }
